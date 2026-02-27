@@ -18,10 +18,9 @@ This project provides reusable hardware helpers for a small robot, including:
 - Button for start/reset
 
 ## How to Run
-1. Open the project folder in Arduino IDE.
-2. Verify that `Helpers.h` is included.
-3. Upload any `.ino` file that includes `Helpers.h` to the board.
-4. Press the button to initialize hardware.
+1. Open project file
+2. Verify that `Helpers.h` and `Helpers.cpp` are in the same folder as project
+3. Make sure to `#include "Helpers.h"`
 
 ## Known Issues
 - Gyro requires calibration at startup.
