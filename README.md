@@ -8,13 +8,13 @@ This project provides reusable hardware helpers for a small robot, including:
 - Servo control
 - LED status indicators
 
-## Hardware Assumptions
+## Hardware 
 - Motors connected via PWM and direction pins
 - NeoPixel LED strip for status
 - MPU6050 gyro sensor
 - HC-SR04 ultrasonic sensor
 - Servo motor for scanning
-- 3 analog line sensors (currently not used)
+- 3 analog colour line sensors
 - Button for start/reset
 
 ## How to Run
@@ -26,4 +26,4 @@ This project provides reusable hardware helpers for a small robot, including:
 - Gyro requires calibration at startup.
 - Ultrasonic readings can be noisy if objects are angled.
 - LED brightness is fixed at 50/255.
-- robot drift towards the right when moving forward, not resolved.
+- Robot drifts towards the right when moving forward, not resolved.
