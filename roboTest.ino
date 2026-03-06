@@ -8,5 +8,5 @@ void setup() {
 void loop() {
   driveStraightGyro();
 
-  updateDriveStraight
+  updateDriveStraight();
 }
