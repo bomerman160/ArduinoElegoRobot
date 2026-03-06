@@ -28,10 +28,13 @@ extern int16_t gyroZ;
 extern float gyroZOffset;
 extern float currentAngle;
 extern unsigned long lastTime;
+extern const int gyroTurnTimeout;
 
 // global objects
 extern CRGB leds[NUM_LEDS];
 extern Servo scanServo;
+extern int driveSpeed;
+extern float targetHeading;
 
 // servo helpers
 void setServoAngle(int angle);
@@ -51,6 +54,8 @@ void updateGyroAngle();
 void resetAngle();
 float getAngle();
 void gyroTurn(int targetAngle, int speed);
+void driveStraightGyro(int speed);
+void updateDriveStraight();
 
 // ultrasonic
 int getDistance();
